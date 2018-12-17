@@ -1,5 +1,5 @@
 voteCooldown = 1800
-currentWeather = "EXTRASUNNY"
+currentWeather = "XMAS"
 
 weatherVoterCooldown = voteCooldown
 
@@ -25,6 +25,10 @@ AddEventHandler("CMG:getCurrentWeather", function()
     TriggerClientEvent("CMG:voteFinished",source,currentWeather)
 end)
 
+RegisterServerEvent("CMG:setCurrentWeather")
+AddEventHandler("CMG:setCurrentWeather", function(newWeather)
+	currentWeather = newWeather
+end)
 
 Citizen.CreateThread(function()
 	while true do
