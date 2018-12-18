@@ -1,4 +1,4 @@
-defaultWeather = "EXTRASUNNY"
+defaultWeather = "XMAS"
 currentWeather = defaultWeather
 showWeatherVoteGUI = false
 voteInProgress = false
@@ -71,7 +71,7 @@ function changeWeather()
 		end
 	end
 	currentWeather = highestWeather
-	TriggerServerEvent("CMG:setCurrentWeather",newWeather)
+	TriggerServerEvent("CMG:setCurrentWeather",highestWeather)
 end
 
 RegisterNetEvent("CMG:voteFinished")
