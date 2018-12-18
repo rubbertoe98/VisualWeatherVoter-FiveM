@@ -1,4 +1,4 @@
-defaultWeather = "XMAS"
+defaultWeather = "CLEAR"
 currentWeather = defaultWeather
 showWeatherVoteGUI = false
 voteInProgress = false
